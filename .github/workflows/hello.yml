@@ -1,0 +1,16 @@
+name: Hello Pipeline
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "My first pipeline is working!"
+
+      - name: Print date
+        run: date
+
+      - name: Print current folder
+        run: pwd
